@@ -44,4 +44,4 @@ then interpolate them with maven:
 This approach perfectily fits with the GitOps pattern.
 
 ## Further reading
-See the official docs here: https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin
+You can check out my blog post here: https://devopoly.de/content/creating-java-applications-in-docker-using-jib/
