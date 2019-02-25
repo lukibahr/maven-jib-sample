@@ -1,4 +1,4 @@
-package de.devopoly.demo;
+package de.devopoly.uuid;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

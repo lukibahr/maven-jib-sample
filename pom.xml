@@ -16,6 +16,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<docker.namespace>lukasbahr</docker.namespace>
 	</properties>
 
 	<dependencies>
@@ -62,7 +63,7 @@
 				<version>1.0.0</version>
 				<configuration>
 					<to>
-						<image>lukasbahr/jib-demo:latest</image>
+						<image>lukasbahr/${project.name}:${project.version}</image>
 						<auth>
 							<username>${env.DOCKERHUB_USER}</username>
 							<password>${env.DOCKERHUB_USERPASSWORD}</password>
@@ -71,7 +72,7 @@
 					<container>
 						<jvmFlags>
 							<jvmFlag>-Xms256m</jvmFlag>
-							<jvmFlag>-Xms256m</jvmFlag>
+							<jvmFlag>-Xmx512m</jvmFlag>
 						</jvmFlags>
 						<!--<ports>
 							<port>8888</port>
@@ -81,7 +82,6 @@
 							<registry>hub.docker.io</registry>
 						</labels>
 					</container>
-
 				</configuration>
 			</plugin>
 		</plugins>

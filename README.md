@@ -9,6 +9,8 @@ The application is based on Spring Boot and contains a UUIDController that gener
 The maven jib plugin containerizes the application when the `jib:build` goal is executed. You can even include the jib goal 
 in another maven lifecycle like `mvn package`
 
+Jib is based on OCI, OpenContainerInterface, which provides a standardidzesd interface for container runtimes
+
 ## Prerequisites
 
 All you need is a docker daemin and a running maven installation (maven requires java)
