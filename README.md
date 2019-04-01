@@ -35,7 +35,7 @@ then interpolate them with maven:
 ```xml
 <auth>
     <username>${env.DOCKERHUB_USER}</username>
-    <password>${env.DOCKERHUB_USERPASSWORD}</password>
+    <password>${env.DOCKERHUB_PASSWORD}</password>
 </auth>
 ```
 

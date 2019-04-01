@@ -1,0 +1,6 @@
+pipeline:
+  build:
+    image: maven
+    secrets: [ DOCKERHUB_USER, DOCKERHUB_PASSWORD ]
+    commands: 
+      - mvn clean package
