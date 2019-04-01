@@ -1,5 +1,8 @@
-pipeline:
-  build:
+kind: pipeline
+name: default
+
+steps:
+  - name: build
     image: maven
     secrets: [ DOCKERHUB_USER, DOCKERHUB_PASSWORD ]
     commands: 
