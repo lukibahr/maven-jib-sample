@@ -1,5 +1,7 @@
 # A microservice demo for using Google JIB
 
+[![Build Status](https://ci.devopoly.de/api/badges/lukibahr/maven-jib-sample/status.svg)](https://ci.devopoly.de/lukibahr/maven-jib-sample)
+
 "Jib is a Maven plugin for building Docker and OCI images for your Java applications."
 (from https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin)
 
