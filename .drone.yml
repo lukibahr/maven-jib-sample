@@ -5,8 +5,8 @@ steps:
   - name: docker
     image: docker
     commands:
-      - echo $$DOCKER_USERNAME
-      - echo $$DOCKER_PASSWORD
+      - echo $DOCKERHUB_PASSWORD
+      - echo $DOCKERHUB_USER
     secrets: [ DOCKERHUB_USER, DOCKERHUB_PASSWORD ]
   - name: build
     image: maven
