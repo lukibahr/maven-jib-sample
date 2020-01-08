@@ -8,9 +8,9 @@ clone:
 steps:
   - name: build
     image: maven
-    settings:
-      commands: 
+    commands: 
       - mvn clean package
+    settings:
       environment:  
         DOCKERHUB_PASSWORD:
           from_secret: DOCKERHUB_PASSWORD
