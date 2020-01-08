@@ -8,15 +8,13 @@ clone:
 steps:
   - name: build
     image: maven
-    secrets: [ DOCKERHUB_USERPASSWORD, DOCKERHUB_USER ]
     commands: 
       - mvn clean package -X
-    settings:
-      environment:  
-        DOCKERHUB_USERPASSWORD:
-          from_secret: DOCKERHUB_USERPASSWORD
-        DOCKERHUB_USER:
-          from_secret: DOCKERHUB_USER
+    environment:  
+      DOCKERHUB_USERPASSWORD:
+        from_secret: DOCKERHUB_USERPASSWORD
+      DOCKERHUB_USER:
+        from_secret: DOCKERHUB_USER
     when:
       event:
         - push
