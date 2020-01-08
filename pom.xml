@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>de.devopoly</groupId>
 	<artifactId>uuid</artifactId>
-	<version>0.2.3-SNAPSHOT</version>
+	<version>0.2.4-SNAPSHOT</version>
 	<name>uuid</name>
 	<description>A demo project for Google JIB demonstration purposes, that generates a uuid</description>
 
@@ -37,6 +37,12 @@
       		<groupId>org.springframework.boot</groupId>
       		<artifactId>spring-boot-starter-actuator</artifactId>
     	</dependency>
+
+		<!-- Micrometer Prometheus registry  -->
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-registry-prometheus</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
