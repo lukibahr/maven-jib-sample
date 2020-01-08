@@ -31,8 +31,7 @@ $ docker pull lukasbahr/jib-demo:latest
 $ docker run -it -p 8888:8888 lukasbahr/jib-demo:latest
 ```
 Note, that the most registries require authentication to push an image. 
-To avoid security issues, do not put your credentials in your pom.xml. Instead, you can export them via environment variables and 
-then interpolate them with maven:
+To avoid security issues, do not put your credentials in your pom.xml. Instead, you can export them via environment variables and then interpolate them with maven:
 
 ```xml
 <auth>
@@ -46,4 +45,5 @@ then interpolate them with maven:
 This approach perfectily fits with the GitOps pattern.
 
 ## Further reading
+
 You can check out my blog post here: https://devopoly.de/content/creating-java-applications-in-docker-using-jib/
