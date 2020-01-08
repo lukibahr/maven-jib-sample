@@ -9,7 +9,7 @@ steps:
   - name: build
     image: maven
     commands: 
-      - mvn clean package
+      - mvn clean package -X
     settings:
       environment:  
         DOCKERHUB_USERPASSWORD:
