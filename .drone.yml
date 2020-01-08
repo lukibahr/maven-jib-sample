@@ -12,8 +12,8 @@ steps:
       - mvn clean package
     settings:
       environment:  
-        DOCKERHUB_PASSWORD:
-          from_secret: DOCKERHUB_PASSWORD
+        DOCKERHUB_USERPASSWORD:
+          from_secret: DOCKERHUB_USERPASSWORD
         DOCKERHUB_USER:
           from_secret: DOCKERHUB_USER
     when:

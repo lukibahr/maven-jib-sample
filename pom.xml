@@ -70,7 +70,7 @@
 						<image>lukasbahr/${project.name}:${project.version}</image>
 						<auth>
 							<username>${env.DOCKERHUB_USER}</username>
-							<password>${env.DOCKERHUB_PASSWORD}</password>
+							<password>${env.DOCKERHUB_USERPASSWORD}</password>
 						</auth>
 					</to>
 					<container>
