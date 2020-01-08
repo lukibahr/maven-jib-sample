@@ -1,15 +1,27 @@
+---
 kind: pipeline
-name: default
+name: build
+
+clone:
+  depth: 50
 
 steps:
-  - name: docker
-    image: docker
-    commands:
-      - echo $$DOCKERHUB_PASSWORD
-      - echo $$DOCKERHUB_USER
-    secrets: [ DOCKERHUB_USER, DOCKERHUB_PASSWORD ]
   - name: build
     image: maven
     secrets: [ DOCKERHUB_USER, DOCKERHUB_PASSWORD ]
     commands: 
       - mvn clean package
+
+  - name: build
+    image: maven
+    settings:
+      commands: 
+      - mvn clean package
+      environment:  
+        DOCKERHUB_PASSWORD:
+          from_secret: DOCKERHUB_PASSWORD
+        DOCKERHUB_USER:
+          from_secret: DOCKERHUB_USER
+    when:
+      event:
+        - push
