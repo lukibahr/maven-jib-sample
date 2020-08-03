@@ -23,6 +23,7 @@ Run the maven project locally: `mvn exec:java`
 Create a jar file: `mvn clean package`
 Create a docker build: `mvn jib:build`
 Included in packaging: `mvn package`
+Local Build: `mvn jib:dockerBuild`
  
 You can then run the container on any docker environment that can connect to the registry
 
@@ -52,4 +53,5 @@ There are metrics endpoints available at ``http://localhost:8080/actuator``. Nav
 
 ## Further reading
 
-- [https://dzone.com/articles/monitoring-using-spring-boot-2-prometheus-and-graf](https://dzone.com/articles/monitoring-using-spring-boot-2-prometheus-and-graf)
+- Custom metrics: [https://dzone.com/articles/monitoring-using-spring-boot-2-prometheus-and-graf](https://dzone.com/articles/monitoring-using-spring-boot-2-prometheus-and-graf)
+- Jib: [https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin)
