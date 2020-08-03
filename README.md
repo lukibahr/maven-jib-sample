@@ -41,13 +41,14 @@ To avoid security issues, do not put your credentials in your pom.xml. Instead, 
 </auth>
 ```
 
+## Run the container
+
+Use docker to run the container: ``docker run -it -p 8080:8888 lukasbahr/uuid:0.2.5-SNAPSHOT``. 
+
 ## Metrics and endpoints
 
 The main application has an endpoint available for uuid generation at ``http://localhost:8888/uuid``. 
 There are metrics endpoints available at ``http://localhost:8080/actuator``. Navigate through the subroutes, e.g. `/actuator/prometheus` or `/actuator/metrics`.
-
-
-
 
 ## Further reading
 
