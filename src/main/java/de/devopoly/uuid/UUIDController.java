@@ -14,10 +14,6 @@ public class UUIDController {
     private final static Logger logger = LoggerFactory.getLogger(UUIDController.class);
 
     @GetMapping(value="/uuid", produces=MediaType.APPLICATION_JSON_VALUE)
-    public String sayUUID() {
-        return generateUUID();
-    }
-
     public String generateUUID() {
         final String uuid = UUID.randomUUID().toString();
         logger.info("Generated UUID: " + uuid);
