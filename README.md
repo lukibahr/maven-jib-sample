@@ -30,7 +30,8 @@ You can then run the container on any docker environment that can connect to the
 $ docker pull lukasbahr/jib-demo:latest
 $ docker run -it -p 8888:8888 lukasbahr/jib-demo:latest
 ```
-Note, that the most registries require authentication to push an image. 
+
+Note, that the most registries require authentication to push an image.
 To avoid security issues, do not put your credentials in your pom.xml. Instead, you can export them via environment variables and then interpolate them with maven:
 
 ```xml
@@ -40,10 +41,14 @@ To avoid security issues, do not put your credentials in your pom.xml. Instead, 
 </auth>
 ```
 
-## Future thoughts
+## Metrics and endpoints
 
-This approach perfectily fits with the GitOps pattern.
+The main application has an endpoint available for uuid generation at ``http://localhost:8888/uuid``. 
+There are metrics endpoints available at ``http://localhost:8080/actuator``. Navigate through the subroutes, e.g. `/actuator/prometheus` or `/actuator/metrics`.
+
+
+
 
 ## Further reading
 
-You can check out my blog post here: https://devopoly.de/content/creating-java-applications-in-docker-using-jib/
+- [https://dzone.com/articles/monitoring-using-spring-boot-2-prometheus-and-graf](https://dzone.com/articles/monitoring-using-spring-boot-2-prometheus-and-graf)
