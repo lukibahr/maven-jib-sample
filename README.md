@@ -55,3 +55,4 @@ There are metrics endpoints available at ``http://localhost:8080/actuator``. Nav
 
 - Custom metrics: [https://dzone.com/articles/monitoring-using-spring-boot-2-prometheus-and-graf](https://dzone.com/articles/monitoring-using-spring-boot-2-prometheus-and-graf)
 - Jib: [https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin)
+- Further conig: [https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin#extended-usage](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin#extended-usage)

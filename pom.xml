@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>de.devopoly</groupId>
 	<artifactId>uuid</artifactId>
-	<version>0.2.7-SNAPSHOT</version>
+	<version>0.2.8-SNAPSHOT</version>
 	<name>uuid</name>
 	<description>A demo project for Google JIB demonstration purposes, that generates a uuid</description>
 
@@ -88,6 +88,7 @@
 							<jvmFlag>-Xms256m</jvmFlag>
 							<jvmFlag>-Xmx512m</jvmFlag>
 						</jvmFlags>
+						<user>1000</user>
 						<!--<ports>
 							<port>8888</port>
 						</ports>-->
