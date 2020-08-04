@@ -16,7 +16,7 @@ public class UUIDController {
     @GetMapping(value="/uuid", produces=MediaType.APPLICATION_JSON_VALUE)
     public String generateUUID() {
         final String uuid = UUID.randomUUID().toString();
-        logger.info("Generated UUID: " + uuid);
+        logger.info("Generated uuid: " + uuid);
         return uuid;
     }
 }

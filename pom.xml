@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>de.devopoly</groupId>
 	<artifactId>uuid</artifactId>
-	<version>0.2.6-SNAPSHOT</version>
+	<version>0.2.7-SNAPSHOT</version>
 	<name>uuid</name>
 	<description>A demo project for Google JIB demonstration purposes, that generates a uuid</description>
 
